@@ -1,7 +1,17 @@
 from pwn import *
 
 """
+
 ARM 32-bit BufferOverflow
+
+    Arch:     arm-32-little
+    RELRO:    Full RELRO
+    Stack:    No canary found
+    NX:       NX disabled
+    PIE:      No PIE (0x10000)
+    RWX:      Has RWX segments
+    FORTIFY:  Enabled
+
 """
 
 w = remote("challenge04.root-me.org",61045)
