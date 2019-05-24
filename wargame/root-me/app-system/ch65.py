@@ -2,7 +2,7 @@ from pwn import *
 
 """
 
-MIPS BufferOverflow - noalsr
+MIPS 32-bit BufferOverflow - noalsr
 
     Arch:     mips-32-big
     RELRO:    No RELRO
